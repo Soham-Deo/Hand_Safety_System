@@ -1,5 +1,6 @@
 from src import draw_boxes_util, detection_util
 import cv2
+import numpy as np
 
 
 def run_on_camera(detection_graph, sess):
@@ -7,6 +8,7 @@ def run_on_camera(detection_graph, sess):
     while True:
 
         ret, image = capture.read()
+        image = np.array(np.fliplr(image))
         image_height, image_width = image.shape[:2]
         boxes, scores, classes = detection_util.detect(image, detection_graph, sess)
         image = draw_boxes_util.draw_boxes(image, image_height, image_width, boxes, scores, classes)

@@ -1,6 +1,6 @@
 import cv2
 from src import check_distance
-
+from src import alert
 
 def draw_line(image, image_height, image_width):
     """
@@ -76,6 +76,7 @@ def draw_boxes(image, image_height, image_width, boxes, scores, classes):
             alert_warning = check_distance.check(int(top), warning_line_y)
 
             if alert_warning is True:
+                alert.play()
                 cv2.rectangle(img=image,
                               pt1=p1,
                               pt2=p2,
