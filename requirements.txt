@@ -1,0 +1,5 @@
+tensorflow==1.14.0
+pandas==0.25.0
+numpy==1.16.0
+object-detection-0.1
+opencv-python
