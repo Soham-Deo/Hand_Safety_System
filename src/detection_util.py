@@ -5,7 +5,7 @@ import os
 
 
 FROZEN_GRAPH_FOLDER = 'frozen_graph'    # path to folder where model graph is stored
-MODEL_PATH = os.path.join(FROZEN_GRAPH_FOLDER, 'ssd_lite_frozen_inference_graph.pb')    # Path to Model Graph
+MODEL_PATH = os.path.join(FROZEN_GRAPH_FOLDER, 'frozen_inference_graph.pb')    # Path to Model Graph
 LABELS_PATH = os.path.join(FROZEN_GRAPH_FOLDER, 'labelmap.pbtxt')   # Path to labelmap file
 
 NUM_CLASSES = 1     # max number of classes

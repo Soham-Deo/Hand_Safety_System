@@ -1,5 +1,4 @@
-frozen_graph/ssd5_optimized_inference_graph.pb
-frozen_graph/ssd_lite_frozen_inference_graph.pb
+frozen_graph/frozen_inference_graph.pb
 tester.py
 src/__pycache__/*.pyc
 protos/__pycache__/
