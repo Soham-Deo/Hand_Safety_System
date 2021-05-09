@@ -1,0 +1,20 @@
+graph:
+  folder: frozen_graph
+  model: frozen_inference_graph.pb
+  labelmap: labelmap.pbtxt
+
+threshold: 0.50
+
+warning_line_ratio: 0.30
+stop_line_ratio: 0.15
+colors:
+  warning_line:
+    b: 3
+    g: 177
+    r: 252
+  stop_line:
+    b: 0
+    g: 0
+    r: 255
+
+
